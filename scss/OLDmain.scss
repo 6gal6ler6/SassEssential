@@ -1,0 +1,113 @@
+$primaryColor: #272727;
+$accentColor: #ff652f;
+$textColor:#fff;
+$fontWeights:(
+    "regular":400,
+    "medium":500,
+    "bold":700
+
+);
+
+body{
+    background: $primaryColor;
+    color: $textColor;
+    
+}
+
+.main{
+    width:80%;
+    margin: 0 auto;
+    p{
+        font-weight: map-get($fontWeights , bold );
+    }
+}
+
+
+.mainContainer {
+  width: 80%;
+  margin: auto;
+
+  .hexagon {
+    position: relative;
+    width: 300px;
+    height: 173.21px;
+    background-color: #64c7cc;
+    margin: 86.6px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    border-left: solid 1px #333333;
+    border-right: solid 1px #333333;
+  }
+
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 212.13px;
+    height: 212.13px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 42.934px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  }
+
+  .hexagon:before {
+    top: -106.066px;
+    border-top: solid 1.4142px #333333;
+    border-right: solid 1.4142px #333333;
+  }
+
+  .hexagon:after {
+    bottom: -106.066px;
+    border-bottom: solid 1.4142px #333333;
+    border-left: solid 1.4142px #333333;
+  }
+
+  /*cover up extra shadows*/
+  .hexagon span {
+    display: block;
+    position: absolute;
+    top: 0.5773502691896257px;
+    left: 0;
+    width: 298px;
+    height: 172.0504px;
+    z-index: 2;
+    background: inherit;
+    background-color: blue;
+  }
+
+  .hex {
+    float: left;
+    margin-right: -26px;
+    margin-bottom: -50px;
+     .left {
+        float: left;
+        width: 0;
+        border-right: 30px solid #6c6;
+        border-top: 52px solid transparent;
+        border-bottom: 52px solid transparent;
+      }
+       .middle {
+        float: left;
+        width: 60px;
+        height: 104px;
+        background: #6c6;
+      }
+       .right {
+        float: left;
+        width: 0;
+        border-left: 30px solid #6c6;
+        border-top: 52px solid transparent;
+        border-bottom: 52px solid transparent;
+      }
+      &Row {
+        clear: left;
+      }
+      .even {
+        margin-top: 53px;
+      }
+  }
+
+}

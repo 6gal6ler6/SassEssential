@@ -1,0 +1,108 @@
+body {
+  background: #272727;
+  color: #fff;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main p {
+  font-weight: 700;
+}
+
+.mainContainer {
+  width: 80%;
+  margin: auto;
+  /*cover up extra shadows*/
+}
+
+.mainContainer .hexagon {
+  position: relative;
+  width: 300px;
+  height: 173.21px;
+  background-color: #64c7cc;
+  margin: 86.6px 0;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  border-left: solid 1px #333333;
+  border-right: solid 1px #333333;
+}
+
+.mainContainer .hexagon:before,
+.mainContainer .hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 212.13px;
+  height: 212.13px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 42.934px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.mainContainer .hexagon:before {
+  top: -106.066px;
+  border-top: solid 1.4142px #333333;
+  border-right: solid 1.4142px #333333;
+}
+
+.mainContainer .hexagon:after {
+  bottom: -106.066px;
+  border-bottom: solid 1.4142px #333333;
+  border-left: solid 1.4142px #333333;
+}
+
+.mainContainer .hexagon span {
+  display: block;
+  position: absolute;
+  top: 0.5773502691896257px;
+  left: 0;
+  width: 298px;
+  height: 172.0504px;
+  z-index: 2;
+  background: inherit;
+  background-color: blue;
+}
+
+.mainContainer .hex {
+  float: left;
+  margin-right: -26px;
+  margin-bottom: -50px;
+}
+
+.mainContainer .hex .left {
+  float: left;
+  width: 0;
+  border-right: 30px solid #6c6;
+  border-top: 52px solid transparent;
+  border-bottom: 52px solid transparent;
+}
+
+.mainContainer .hex .middle {
+  float: left;
+  width: 60px;
+  height: 104px;
+  background: #6c6;
+}
+
+.mainContainer .hex .right {
+  float: left;
+  width: 0;
+  border-left: 30px solid #6c6;
+  border-top: 52px solid transparent;
+  border-bottom: 52px solid transparent;
+}
+
+.mainContainer .hexRow {
+  clear: left;
+}
+
+.mainContainer .hex .even {
+  margin-top: 53px;
+}
+/*# sourceMappingURL=OLDmain.css.map */
